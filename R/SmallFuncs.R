@@ -128,7 +128,7 @@ saveSoFar <- function(optObj,verbose) {
 }
 
 # Cannot pass `%dopar%` so we recreate it with this function.
-ParMethod <- function(x) if(x) {`%dopar%`} else {`%do%`}
+ParMethod <- function(x) if(x) {`%dorng%`} else {`%do%`} ###Changed dopar to dorng
 
 # Get information about the acquisition functions.
 getAcqInfo <- function(acq) {
